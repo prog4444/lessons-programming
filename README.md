@@ -36,6 +36,7 @@ Generate a new JWT authentication secret key
 
 Run the database migrations (Set the database connection in .env before migrating)
 
+    php artisan passport:install
     php artisan migrate
     php artisan db:seed
 
