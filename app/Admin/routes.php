@@ -6,8 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Admin::routes();
 
-Route
-::group([
+Route::group([
     'prefix'        => config('admin.route.prefix'),
     'namespace'     => config('admin.route.namespace'),
     'middleware'    => config('admin.route.middleware'),
