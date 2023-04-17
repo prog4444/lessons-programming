@@ -44,6 +44,7 @@ Start the local development server
 
 Start the local development server
 
+    npm run dev
     php artisan serve
 
 You can now access the server at http://localhost:8000
