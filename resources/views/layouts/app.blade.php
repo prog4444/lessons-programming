@@ -12,17 +12,28 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    @trixassets
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <div id="app">
+    <div id="app" style="position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('', 'TajLingvo') }}
                 </a>
+                <a href="{{route('trix')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
+                <a href="#">Masalaho</a> &nbsp;&nbsp;&nbsp;
+                <a href="#">Masalaho</a> &nbsp;&nbsp;&nbsp;
+                <a href="#">Masalaho</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -73,8 +84,11 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            
+            
         </main>
     </div>
+
+    @yield('content')
 </body>
 </html>
