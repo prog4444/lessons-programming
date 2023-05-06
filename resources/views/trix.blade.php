@@ -18,11 +18,13 @@
                     
 <form method="post" action={{ route('store') }}>
     @csrf
-    <p>
-        <input id="x" type="hidden" name="content" value="" />
-        <trix-editor input="x" class="trix-content"></trix-editor>
-    </p>
+    
+    <input id="title" type="hidden" name="title" value="" />
+    <trix-editor input="title" class="trix-content"></trix-editor>
     <input type="submit" name="submit" value="Submit" />
+      
+    
+   
 </form>
 
 {{ __('You are logged in!') }}

@@ -15,10 +15,10 @@ class TrixController extends Controller
  
     public function store(Request $request)
     {
-        $r = Post::all();
-        return view('show', compact('r'));
+        // $r = Post::all();
+        // return view('show', compact('r'));
         $this->validate($request, [
-            'content' => 'required|string|min:2|max:1000',
+            'title' => 'required|string|min:2|max:1000',
         ]);
         $arr =$request->all();
         $comment = Post::create($arr);

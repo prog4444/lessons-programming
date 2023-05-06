@@ -29,10 +29,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('', 'TajLingvo') }}
                 </a>
-                <a href="{{route('trix')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
-                <a href="#">Masalaho</a> &nbsp;&nbsp;&nbsp;
-                <a href="#">Masalaho</a> &nbsp;&nbsp;&nbsp;
-                <a href="#">Masalaho</a>
+                <a href="{{route('trix')}}">Add Info</a> &nbsp;&nbsp;&nbsp;
+                <a href="{{route('showzadacha')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
+             
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

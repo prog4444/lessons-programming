@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\TrixController;
+use App\Http\Controllers\ZadachaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +31,9 @@ Route::get('/answer', [CommentController::class, 'answer'])->name('answer')->mid
 Route::post('/answer', [CommentController::class, 'answerStore'])->name('answer.store')->middleware('auth');
 Route::get('/comments/{id}', [CommentController::class, 'comments'])->name('comments.list');
 Route::post('/comments', [CommentController::class, 'store'])->name('comments.store')->middleware('auth');
+
+
+Route::get('/showzadacha', [ZadachaController::class, 'showZadaacha'])->name('showzadacha');
 
 
 Route::get('/trix', [TrixController::class, 'index'])->name('trix');

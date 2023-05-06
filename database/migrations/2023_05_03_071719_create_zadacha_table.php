@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('zadacha', function (Blueprint $table) {
             $table->id();
-            $table->text('title')->nullable();
-            $table->text('content')->nullable();
-            $table->text('description')->nullable();
+            $table->text('name')->nullable();
+            $table->string('status')->nullable();
+            $table->string('avatar')->nullable();
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('zadacha');
     }
 };
