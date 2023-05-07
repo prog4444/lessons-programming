@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('zadacha', function (Blueprint $table) {
             $table->id();
-            $table->text('name')->nullable();
+            $table->text('title')->nullable();
+            $table->string('description')->nullable();
             $table->string('status')->nullable();
-            $table->string('avatar')->nullable();
             $table->timestamps();
         });
     }

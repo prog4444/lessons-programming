@@ -1,5 +1,6 @@
 <?php
 
+use App\Admin\Controllers\PostController;
 use Encore\Admin\Facades\Admin;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
@@ -16,5 +17,8 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('posts', PostController::class);
     $router->resource('zadachas', ZadachaController::class);
+    $router->post('post/store', [PostController::class, 'store'])->name('post.store');
 
 });
+ 
+

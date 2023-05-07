@@ -8,6 +8,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -17,20 +25,25 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <link rel="stylesheet" href="/css/app.css">
 </head>
-<body>
+<body >
     <div id="app" style="position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light  shadow-sm" style="background-color: #7952b3;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" style="color: cornsilk;" href="{{ url('/') }}">
                     {{ config('', 'TajLingvo') }}
                 </a>
-                <a href="{{route('trix')}}">Add Info</a> &nbsp;&nbsp;&nbsp;
-                <a href="{{route('showzadacha')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
+                
+                <a style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('trix')}}">Add Info</a> &nbsp;&nbsp;&nbsp;
+                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('showzadacha')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
+                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('books')}}">Books</a> &nbsp;&nbsp;&nbsp;
+                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="#">About</a> &nbsp;&nbsp;&nbsp;
              
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -49,18 +62,20 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a style="color: cornsilk;" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a style="color: cornsilk;" class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
+
+                            
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a  style="color: cornsilk;" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
@@ -89,5 +104,14 @@
     </div>
 
     @yield('content')
+
+
+    <script>
+        $('#summernote').summernote({
+          placeholder: 'Description',
+          tabsize: 2,
+          height: 250
+        });
+      </script>
 </body>
 </html>

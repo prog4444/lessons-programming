@@ -5,8 +5,8 @@
     <div class="container-fluid p-4 m-5" >
         <div class="row justify-content-md-center">
             <div class="col-md-9">
-                <h1 class="text-danger">Post Add</h1>
-                <form action="{{ route('post.store')}}" method="POST">
+                <h1 class="text-danger">Maasala Add</h1>
+                <form action="{{ route('masala.store')}}" method="POST">
                     @csrf
                     <label for="">Title:</label>
                     <input type="text" class="form-control" name="title">

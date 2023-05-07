@@ -11,7 +11,7 @@ class Zadacha extends Model
     protected $connection = 'mysql';
     protected $table = 'zadacha';
     protected $fillable = [
-        'name',
-        'status',
+        'title',
+        'description',
     ];
 }

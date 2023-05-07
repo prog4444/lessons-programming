@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Zadacha;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
-class ZadachaController extends Controller
+class PostController extends Controller
 {
     public function index()
     {
-        return view('masalaCreate');
+        return view('trix');
     }
     public function store()
     {
@@ -18,7 +18,7 @@ class ZadachaController extends Controller
             'description' => 'string'
 
         ]);
-        Zadacha::create($data);
+        Post::create($data);
         return back();
     }
 }
