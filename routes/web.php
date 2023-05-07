@@ -42,7 +42,7 @@ Route::get('masala/store', [ZadachaController::class, 'index'])->name('masala.in
 Route::post('masala/store', [ZadachaController::class, 'store'])->name('masala.store');
 
 # show / zadacha / books / view
-Route::get('/showzadacha', [ZadachaController::class, 'showZadaacha'])->name('showzadacha');
+Route::get('/showzadacha', [ZadachaController::class, 'showZadacha'])->name('showzadacha');
 Route::get('/books', [BookController::class, 'books'])->name('books');
 
 

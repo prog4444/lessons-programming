@@ -40,7 +40,7 @@
                     {{ config('', 'TajLingvo') }}
                 </a>
                 
-                <a style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('trix')}}">Add Info</a> &nbsp;&nbsp;&nbsp;
+                <a style="color: cornsilk; font-size:15px; text-decoration:none" href="#">Add Info</a> &nbsp;&nbsp;&nbsp;
                 <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('showzadacha')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
                 <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('books')}}">Books</a> &nbsp;&nbsp;&nbsp;
                 <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="#">About</a> &nbsp;&nbsp;&nbsp;

@@ -189,7 +189,7 @@
         {!! $comments->onEachSide(5)->links() !!}
     </div>
 
-    {{ __('You are logged in!') }}
+    
                  
 </div>
 </div>

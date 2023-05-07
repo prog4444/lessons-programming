@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ZadachaController extends Controller
 {
+    public function showZadacha()
+    {
+        $zadacha = Zadacha::all();
+        return view('showzadacha', compact('zadacha'));
+    }
     public function index()
     {
         return view('masalaCreate');
