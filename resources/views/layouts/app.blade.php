@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('', 'TajLingvo') }}</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
@@ -40,7 +40,7 @@
                     {{ config('', 'TajLingvo') }}
                 </a>
                 
-                <a style="color: cornsilk; font-size:15px; text-decoration:none" href="#">Add Info</a> &nbsp;&nbsp;&nbsp;
+                
                 <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('showzadacha')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
                 <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('books')}}">Books</a> &nbsp;&nbsp;&nbsp;
                 <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="#">About</a> &nbsp;&nbsp;&nbsp;
@@ -104,6 +104,9 @@
     </div>
 
     @yield('content')
+
+
+
 
 
     <script>

@@ -71,7 +71,7 @@ class CommentController extends Controller
         unset($arr['_token']);
         $comment = Comment::create($arr);
         $request->session()->flash('status', '<strong>Успешно.</strong> Вопрос #' . $comment->id . ' добавлен');
-        return redirect()->route('comments.list',$comment->id);
+        return back();
     }
     // public function saveImage($file){
     //     $width = 500; // your max width
