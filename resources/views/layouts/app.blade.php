@@ -38,12 +38,11 @@
             <div class="container">
                 <a class="navbar-brand" style="color: cornsilk;" href="{{ url('/') }}">
                     {{ config('', 'TajLingvo') }}
-                </a>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
-                <a style="color: cornsilk; font-size:15px; text-decoration:none" href="#">Add Info</a> &nbsp;&nbsp;&nbsp;
-                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('showzadacha')}}">Masalaho</a> &nbsp;&nbsp;&nbsp;
-                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('books')}}">Books</a> &nbsp;&nbsp;&nbsp;
-                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="#">About</a> &nbsp;&nbsp;&nbsp;
+                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('showzadacha')}}">Масъалаҳо</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('books')}}">Китобҳо</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="#">Дар бораи</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -62,13 +61,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a style="color: cornsilk;" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a style="color: cornsilk;" class="nav-link" href="{{ route('login') }}">{{ __('Дохилшавӣ') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a style="color: cornsilk;" class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a style="color: cornsilk;" class="nav-link" href="{{ route('register') }}">{{ __('Бақайдгирӣ') }}</a>
                                 </li>
                             @endif
 

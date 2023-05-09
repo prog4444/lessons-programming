@@ -8,7 +8,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card" style="margin-top:100px; margin-left:1rem;">
-                <div class="card-header">{{ __('Books') }}</div>
+                <div class="card-header">{{ __('Китобҳо') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -20,37 +20,41 @@
                     <div class="row" bis_skin_checked="1">
                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
                           <a class="d-block" href="/docs/5.0/examples/headers/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Headers</h3>
+                            <img class="img-thumbnail mb-3" srcset="" src="/images/a.jpg" alt="" width="480" height="300" loading="lazy">
+                            <h3 class="h5 mb-1">Хондан</h3>
+                            <h3 class="h5 mb-1">Боргирӣ</h3>
                           </a>
-                          <p class="text-muted">Display your branding, navigation, search, and more with these header components</p>
+                          <p class="text-muted">Китоби зерин барои бехтар ва бо сифат гардонидани коди шумо...</p>
                         </div>
                   
                   
                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
                           <a class="d-block" href="/docs/5.0/examples/heroes/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Heroes</h3>
+                            <img class="img-thumbnail mb-3" srcset="" src="/images/b.jpg" alt="" width="480" height="300" loading="lazy">
+                            <h3 class="h5 mb-1">Хондан</h3>
+                            <h3 class="h5 mb-1">Боргирӣ</h3>
                           </a>
-                          <p class="text-muted">Set the stage on your homepage with heroes that feature clear calls to action.</p>
+                          <p class="text-muted">Агар шумо дар роҳи оғозкунии барномерзӣ бошед он гоҳ...</p>
                         </div>
                   
                   
                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
                           <a class="d-block" href="/docs/5.0/examples/features/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Features</h3>
+                            <img class="img-thumbnail mb-3" srcset="" src="/images/d.jpg" alt="" width="480" height="300" loading="lazy">
+                            <h3 class="h5 mb-1">Хондан</h3>
+                            <h3 class="h5 mb-1">Боргирӣ</h3>
                           </a>
-                          <p class="text-muted">Explain the features, benefits, or other details in your marketing content.</p>
+                          <p class="text-muted">Китоби мазкур ба ҳамаи барномарезон новобаста аз дараҷаи онҳо...</p>
                         </div>
                   
                   
                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
                           <a class="d-block" href="/docs/5.0/examples/sidebars/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Sidebars</h3>
+                            <img class="img-thumbnail mb-3" srcset="" src="/images/c.jpg" alt="" width="480" height="300" loading="lazy">
+                            <h3 class="h5 mb-1">Хондан</h3>
+                            <h3 class="h5 mb-1">Боргирӣ</h3>
                           </a>
-                          <p class="text-muted">Common navigation patterns ideal for offcanvas or multi-column layouts.</p>
+                          <p class="text-muted">Барномарезӣ бо Python! Китоби зерин забони барномерзӣ Python-ро...</p>
                         </div>
                       </div>
                       <div class="row" bis_skin_checked="1">
