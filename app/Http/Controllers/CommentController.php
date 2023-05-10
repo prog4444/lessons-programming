@@ -67,7 +67,6 @@ class CommentController extends Controller
         ]);
         $arr =$request->all();
         $arr['user_id']=auth()->id();
-        // $arr['image']= $this->saveImage($request->file('image'));
         unset($arr['_token']);
         $comment = Comment::create($arr);
         $request->session()->flash('status', '<strong>Успешно.</strong> Вопрос #' . $comment->id . ' добавлен');

@@ -129,6 +129,7 @@
                                                 <div class="mt-1">
                                                     <label class="sr-only">Вопрос...</label>
                                                     <textarea class="form-control form-control-flush" name="text"   rows="5" placeholder="Вопрос" maxlength="1000"></textarea>
+                                                    <input type="hidden" value="{{$zadachas->id}}" name="zadacha_id">
                                                 </div>
                                               
                                             </div>
@@ -174,9 +175,11 @@
                                   </div>
               
                                   <!-- Text -->
-                                  <p class="mb-3">
-                                    {{$comment->text}}
-                                  </p>
+                                
+                                <pre style="text-size:16px">{{$comment->text}}</pre>
+                                
+                                
+                                 
               
               
                                   <div class="mb-3">

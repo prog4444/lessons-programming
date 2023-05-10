@@ -10,21 +10,21 @@ class ZadachaController extends Controller
 {
     public function showZadacha()
     {
-        $comments = Comment::with('user')->where('parent_id',null)->latest('id')->paginate(25);
+        $comments = Comment::with('user')->where('parent_id',null)->where('zadacha_id', 1)->latest('id')->paginate(25);
         $zadacha = Zadacha::where('id', 1)->get();
         return view('showzadacha', compact('zadacha', 'comments'));
     }
 
     public function showZadachaOne()
     {
-        $comments = Comment::with('user')->where('parent_id',null)->latest('id')->paginate(25);
+        $comments = Comment::with('user')->where('parent_id',null)->where('zadacha_id', 3)->latest('id')->paginate(25);
         $zadacha = Zadacha::where('id', 3)->get();
         return view('showzadacha', compact('zadacha', 'comments'));
     }
 
     public function showZadachaTho()
     {
-        $comments = Comment::with('user')->where('parent_id',null)->latest('id')->paginate(25);
+        $comments = Comment::with('user')->where('parent_id',null)->where('zadacha_id', 5)->latest('id')->paginate(25);
         $zadacha = Zadacha::where('id', 5)->get();
         return view('showzadacha', compact('zadacha', 'comments'));
     }

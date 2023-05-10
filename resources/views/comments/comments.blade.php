@@ -46,9 +46,9 @@
                     </div>
 
                     <!-- Text -->
-                    <p class="mb-3">
-                        {{$parent->text}}
-                    </p>
+                   
+                    <pre>{{$parent->text}}</pre>
+                  
 
                     <div class="mb-3">
                         <div class="row">
@@ -93,9 +93,9 @@
                                         </div>
                                     </div> <!-- / .row -->
                                     <!-- Text -->
-                                    <p class="comment-text">
-                                        {{$comment->text}}
-                                    </p>
+                                    
+                                     <pre>{{$comment->text}}</pre>
+                                    
 
                              
                             <hr>

@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->integer('parent_id')->nullable();
+            $table->integer('zadacha_id')->nullable();
             $table->text('text');
-            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
