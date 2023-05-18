@@ -127,7 +127,7 @@
                                             <div class="col-12">
                                                 <!-- Input -->
                                                 <div class="mt-1">
-                                                    <label class="sr-only">Вопрос...</label>
+                                                    <label class="sr-only">Савол...</label>
                                                     <textarea class="form-control form-control-flush" name="text"   rows="5" placeholder="Вопрос" maxlength="1000"></textarea>
                                                     <input type="hidden" value="{{$zadachas->id}}" name="zadacha_id">
                                                 </div>
@@ -135,8 +135,8 @@
                                             </div>
                                             <div class="col-12">
                                                 <!-- Icons -->
-                                                <button type="submit" class="text-reset btn-primary">
-                                                    Сохронить
+                                                <button type="submit" class="btn btn-primary">
+                                                    Сабткунӣ
                                                 </button>
                                             </div>
                                         </form>
@@ -168,7 +168,7 @@
               
                                           </div>
                                           <div class="col-auto">
-                                              <a href="{{route('comments.list',$comment->id)}}" class="btn btn-primary">Ответы</a>
+                                              <a href="{{route('comments.list',$comment->id)}}" class="btn btn-primary">Ҷавоб</a>
                                           </div>
               
                                       </div> <!-- / .row -->

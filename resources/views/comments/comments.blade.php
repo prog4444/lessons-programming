@@ -15,9 +15,6 @@
 
                     {{-- {{ __('You are logged in!') }} --}}
                  
-   
-
-
 
     <div class="row">
         <div class="col-12">
