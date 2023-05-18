@@ -7,6 +7,7 @@
             <div class="card" style="margin-top: 100px">
                 <div class="card-header">{{ __('Барқароркунии рамз') }}</div>
 
+
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">

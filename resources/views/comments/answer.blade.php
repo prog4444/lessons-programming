@@ -23,9 +23,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-12">
-                            <a class="btn btn-primary" href="{{route('comments')}}">Назад</a>
-                        </div>
+                       
                     </div>
                     <div class="row">
 
@@ -35,7 +33,7 @@
                                 <!-- Input -->
                                 <div class="mt-1">
                                     <label class="sr-only">Вопрос...</label>
-                                    <textarea class="form-control form-control-flush" name="text"  rows="5" placeholder="Вопрос" maxlength="1000"></textarea>
+                                    <textarea class="form-control form-control-flush" name="text"   rows="5" placeholder="Вопрос" maxlength="1000"></textarea>
                                 </div>
                               
                             </div>

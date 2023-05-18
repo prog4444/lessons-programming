@@ -15,9 +15,6 @@
 
                     {{-- {{ __('You are logged in!') }} --}}
                  
-   
-
-
 
     <div class="row">
         <div class="col-12">
@@ -40,7 +37,7 @@
 
                             </div>
                             <div class="col-auto">
-                                <a href="{{route('comments')}}" class="btn btn-primary">Назад</a>
+                                <a href="{{route('showzadacha')}}" class="btn btn-primary">Назад</a>
                             </div>
                         </div> <!-- / .row -->
                     </div>
@@ -110,7 +107,7 @@
                             <!-- Input -->
                             <div class="mt-1">
                                 <label class="sr-only">Ваш коммент</label>
-                                <textarea class="form-control form-control-flush" name="text"  rows="3" placeholder="Вопрос" maxlength="1000"></textarea>
+                                <textarea class="form-control form-control-flush" name="text"   rows="3" placeholder="Вопрос" maxlength="1000"></textarea>
                             </div>
             
                         </div>

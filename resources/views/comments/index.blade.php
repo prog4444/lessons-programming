@@ -114,7 +114,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" style="margin-top:100px; margin-left:1rem;">
-                <div class="card-header">Home</div>
+               
 
                 <div class="card-body">
                     @if (session('status'))
@@ -122,72 +122,28 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                 
-
-    <div class="row mt-3">
-        <div class="col-12 d-flex justify-content-end">
-                <a href="{{route('answer')}}" class="btn btn-primary">Задать вопрос</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            @foreach($comments as $comment)
-            <!-- Card -->
-            <div class="card" style="margin: 1rem;">
-                <div class="card-body">
-                    <!-- Header -->
-                    <div class="mb-3">
-                        <div class="row align-items-center">
-                            <div class="col ml-n2">
-
-                                <!-- Title -->
-                                <h4 class="mb-1">
-                                    {{$comment->user->name}}
-                                </h4>
-                                <!-- Time -->
-                                <p class="card-text small text-muted">
-                                    <span class="fe fe-clock"></span> <time >{{$comment->created_at}}</time>
-                                </p>
-
-                            </div>
-                            <div class="col-auto">
-                                <a href="{{route('comments.list',$comment->id)}}" class="btn btn-primary">Ответы</a>
-                            </div>
-
-                        </div> <!-- / .row -->
-                    </div>
-
-                    <!-- Text -->
-                    <p class="mb-3">
-                      {{$comment->text}}
-                    </p>
-
-
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col">
-
-                                <!-- Buttons -->
-                                <a href="#!" class="btn btn-sm btn-white">
-                                    😬 1
-                                </a>
-                                <a href="#!" class="btn btn-sm btn-white">
-                                    👍 2
-                                </a>
-                            </div>
-                        </div> <!-- / .row -->
-                    </div>
-
-                    <!-- Divider -->
+                    <h5>Хуш омадед ба веб-портали TajLingvo!</h5>
                     <hr>
-                </div>
-            </div>
-                @endforeach
-        </div>
-    </div>
-    <div class="d-flex justify-content-center">
-        {!! $comments->onEachSide(5)->links() !!}
-    </div>
+                    <p style="font-size: 17px">Ин веб-портал барои омӯхтани забонҳои гуногуни барномарезӣ,
+                      технологияҳои барномасозӣ, компютерҳо, платформаҳои мобилӣ ва технологияҳо бахшида шудааст. 
+                      Дар ин ҷо дастурҳо ва маводҳои гуногуни таълимӣ, мақолаҳо ва 
+                      намунаҳо дарёфт кардан мумкин аст.</p>
+
+                    <p style="font-size: 16px">Дар веб-портал шумо метавонед маводҳоро дар самтҳо ба монанди забони барномарезӣ пайдо кунед 
+                      C# ва оилаи технологияҳои .NET (ASP.NET, WPF, Entity Framework ва ғайра), 
+                      технологияҳои дар Асоси Java (Java SE, барномасозӣ Барои ANDROID OS Ва ғайра), 
+                      Python, Dart (Аз Ҷумла Flutter), кор бо пойгоҳи додаҳо (Ms SQL Server, 
+                      MySQL, MongoDB) ва инчунин технологияҳои ВЕБ, ба монанди HTML5, AJAX, jQuery, Node.js, 
+                      ExtJS, Angular, React Ва ғайра.</p>
+                      
+                      <p style="font-size: 17px">Азбаски замони ҳозира бо суръати тез тараққӣ карданаш, ҳама маводҳо ба қадри
+                       имкон пурра карда мешаванд ва нав карда мешаванд, то ба рӯҳияи вақт мувофиқат кунанд ва аҳамияти худро гум накунанд.</p>
+                      
+                      <p style="font-size: 17px">Барои ҳама саволҳо дар бораи сайт ба суроғаи зерин нависед <span style="color:blue; font-weight:bold;">prog90003@mail.com .<span></p>
+                      
+                      <p style="font-size: 17px">Ташаккур ки сайти моро истифода бурда истодаед.</p>
+
+   
 
     
                  

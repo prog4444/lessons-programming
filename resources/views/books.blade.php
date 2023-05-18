@@ -58,40 +58,7 @@
                         </div>
                       </div>
                       <div class="row" bis_skin_checked="1">
-                        <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
-                          <a class="d-block" href="/docs/5.0/examples/headers/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Headers</h3>
-                          </a>
-                          <p class="text-muted">Display your branding, navigation, search, and more with these header components</p>
-                        </div>
-                  
-                  
-                        <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
-                          <a class="d-block" href="/docs/5.0/examples/heroes/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Heroes</h3>
-                          </a>
-                          <p class="text-muted">Set the stage on your homepage with heroes that feature clear calls to action.</p>
-                        </div>
-                  
-                  
-                        <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
-                          <a class="d-block" href="/docs/5.0/examples/features/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Features</h3>
-                          </a>
-                          <p class="text-muted">Explain the features, benefits, or other details in your marketing content.</p>
-                        </div>
-                  
-                  
-                        <div class="col-sm-6 col-md-4 col-xl-3 mb-3" bis_skin_checked="1">
-                          <a class="d-block" href="/docs/5.0/examples/sidebars/">
-                            <img class="img-thumbnail mb-3" srcset="" src="/images/far.jpg" alt="" width="480" height="300" loading="lazy">
-                            <h3 class="h5 mb-1">Sidebars</h3>
-                          </a>
-                          <p class="text-muted">Common navigation patterns ideal for offcanvas or multi-column layouts.</p>
-                        </div>
+                        
                       </div>
                  
                 </div>
@@ -140,46 +107,29 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
+              <i class="fas fa-gem me-3"></i>TajLingvo
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
+              Веб-портали замонавӣ ва қулай барои омӯхтани забонҳои барномарезӣ, бо ёрии 
+              дастрас намудани китобҳои ройгон ва ҳалл намудани масъалаҳо
             </p>
           </div>
           <!-- Grid column -->
   
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
           
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
-            </p>
-          </div>
           <!-- Grid column -->
   
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
+              Ба мо ҳамроҳ шавед  :)
             </h6>
             <p>
-              <a href="#!" class="text-reset">Pricing</a>
+              <a href="#!" class="text-reset">Бақайдгирӣ</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Settings</a>
-            </p>
-          
-            <p>
-              <a href="#!" class="text-reset">Help</a>
+              <a href="#!" class="text-reset">Дохилшавӣ</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -187,13 +137,13 @@
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <h6 class="text-uppercase fw-bold mb-4">Барои алоқа</h6>
             <p><i class="fas fa-home me-3"></i> ш Худжанд, Исмоили Сомонӣ Ленин 226</p>
             <p>
               <i class="fas fa-envelope me-3"></i>
-              info@example.com
+            azamovsiyovush2001asr@gmail.com
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 992 55 666 3291</p>
+            <p><i class="fas fa-phone me-3"></i> + 992 92 900 1811</p>
             <p><i class="fas fa-print me-3"></i> + 992 55 666 3291</p>
           </div>
           <!-- Grid column -->
