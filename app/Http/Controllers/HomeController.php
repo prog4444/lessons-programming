@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -23,6 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data = array(
+            'count_user' => DB::table('users')->count(),
+            'menu'      => 'admin.menu.v_menu_admin',
+            'content' => 'admin.content.view_dashboard'
+        );
+        return view('admin.layouts.v_template', $data);
     }
 }

@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TrixController;
 use App\Http\Controllers\ZadachaController;
@@ -25,6 +27,19 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Auth::routes();
+// admin new 
+Route::get('/admin', function () {
+    return redirect()->action([HomeController::class, 'index']);
+});
+
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/user', [UserController::class, 'index'])->name('user.index');
+
+// Route::get('/user.get_data',[UserController::class, 'get_data'])->name('get_data');
+Route::resource('users', UserController::class);
+
 
 # create post 
 Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
