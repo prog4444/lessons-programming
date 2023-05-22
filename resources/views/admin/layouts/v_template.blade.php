@@ -6,7 +6,7 @@
     <!-- Google Tag Manager -->
     <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
-    <title>Oryfikry | Boilerplate</title>
+    <title>TajLingvo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -144,7 +144,7 @@
                                 <div
                                     class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2">
                                     <span
-                                        class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
+                                        class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Салом,</span>
                                     <span
                                         class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">
                                         {{ Auth::user()->name }}</span>

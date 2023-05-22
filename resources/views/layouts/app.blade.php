@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body >
+    
     <div id="app" style="position: fixed;
     z-index: 1000;
     top: 0;
@@ -40,9 +41,7 @@
                     {{ config('', 'TajLingvo') }}
                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
-                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('showzadacha')}}">Масъалаҳо</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('books')}}">Китобҳо</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="#">Дар бораи</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
              
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -52,12 +51,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('showzadacha')}}">Масъалаҳо</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="{{route('books')}}">Китобҳо</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a  style="color: cornsilk; font-size:15px; text-decoration:none" href="#">Дар бораи</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
+                        
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">

@@ -43,11 +43,11 @@
                             </svg>
                             <!--end::Svg Icon-->
                         </span>
-                        <span class="menu-text">Dashboard</span>
+                        <span class="menu-text">Панели идоракунӣ</span>
                     </a>
                 </li>
                 <li class="menu-section">
-                    <h4 class="menu-text">Custom</h4>
+                    <h4 class="menu-text">Меню</h4>
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
@@ -63,7 +63,7 @@
                             </svg>
                             <!--end::Svg Icon-->
                         </span>
-                        <span class="menu-text">Applications</span>
+                        <span class="menu-text">Барномаҳо</span>
                         <i class="menu-arrow"></i>
                     </a>
                     <div class="menu-submenu">
@@ -71,7 +71,7 @@
                         <ul class="menu-subnav">
                             <li class="menu-item menu-item-parent" aria-haspopup="true">
                                 <span class="menu-link">
-                                    <span class="menu-text">Applications</span>
+                                    <span class="menu-text">Барномаҳо</span>
                                 </span>
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
@@ -87,6 +87,19 @@
                                 </a>
                                 
                             </li>
+                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                                <a href="/masala" class="menu-link menu-toggle">
+                                    <i class="menu-bullet menu-bullet-line">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Маъсалахо</span>
+                                    <span class="menu-label">
+                                        {{-- <span class="label label-rounded label-primary"></span> --}}
+                                    </span>
+                                    
+                                </a>
+                                
+                            </li>
                     
                         </ul>
                     </div>
@@ -97,7 +110,7 @@
                         <span class="menu-icon fas fa-cog">
                            
                         </span>
-                        <span class="menu-text">App Settings</span>
+                        <span class="menu-text">Настройкахо</span>
                     </a>
                 </li>	
             
