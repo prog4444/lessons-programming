@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\User;
 use App\Models\Zadacha;
 use Illuminate\Http\Request;
 
@@ -32,7 +33,16 @@ class ZadachaController extends Controller
     public function index()
     {
         $pro = Zadacha::all();
-        return view('masala.masalaShow', compact('pro'));
+        $data = [
+            'count_user' => User::latest()->count(),
+            'menu'       => 'admin.menu.v_menu_admin',
+            'content'    => 'admin.content.view_user',
+            'masala' => 'masala.masalaShow',
+            'title'    => 'Table User'
+        ];
+       
+        return view('admin.layouts.t_template', compact(['pro']), $data);
+       
     }
 
     public function store()

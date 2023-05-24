@@ -163,14 +163,15 @@
                     </div>
                     <!--end::Container-->
                 </div>
-                <!--end::Header-->
-                <!--begin::Content-->
-                {{-- ini content --}}
-                @include($content)
-                {{-- {{$content}} --}}
-                <!--end::Content-->
-                <!--begin::Footer-->
+             
 
+                  <!--end::Header-->
+                <!--begin::Masala-->
+                {{-- ini masala --}}
+                @include($masala)
+                {{-- {{$masala}} --}}
+                <!--end::Masala-->
+                <!--begin::Footer-->
                 <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
                     <!--begin::Container-->
                     <div

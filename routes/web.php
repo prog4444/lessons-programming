@@ -36,7 +36,6 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/user', [UserController::class, 'index'])->name('user.index');
-
 // Route::get('/user.get_data',[UserController::class, 'get_data'])->name('get_data');
 Route::resource('users', UserController::class);
 
@@ -53,7 +52,7 @@ Route::post('/store/edit', [PostController::class, 'store_edit'])->name('store.e
 
 # create masala
 
-Route::get('masala/store', [ZadachaController::class, 'index'])->name('masala.index');
+Route::get('masala/show', [ZadachaController::class, 'index'])->name('masala.index');
 Route::post('masala/store', [ZadachaController::class, 'store'])->name('masala.store');
 Route::get('masala/create', [ZadachaController::class, 'masala'])->name('masala.create');
 Route::get('/masala/{post}', [ZadachaController::class, 'show'])->name('masala.show');

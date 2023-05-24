@@ -88,11 +88,11 @@
                                 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="/masala" class="menu-link menu-toggle">
+                                <a href="/show" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
-                                    <span class="menu-text">Маъсалахо</span>
+                                    <span class="menu-text">Дарсхои барномарези</span>
                                     <span class="menu-label">
                                         {{-- <span class="label label-rounded label-primary"></span> --}}
                                     </span>
@@ -100,7 +100,20 @@
                                 </a>
                                 
                             </li>
-                    
+                            
+                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                                <a href="/masala/show" class="menu-link menu-toggle">
+                                    <i class="menu-bullet menu-bullet-line">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Маъсалахо барои хал</span>
+                                    <span class="menu-label">
+                                        {{-- <span class="label label-rounded label-primary"></span> --}}
+                                    </span>
+                                    
+                                </a>
+                                
+                            </li>
                         </ul>
                     </div>
                 </li>

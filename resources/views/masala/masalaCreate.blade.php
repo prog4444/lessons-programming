@@ -4,7 +4,7 @@
 <div class="container-fluid p-4">
   <div class="row justify-content-md-center">
       <div class="col-md-12">
-          <h1 class="text-danger">Masala Add</h1>
+          <h1 class="text-danger">Сохтани масъала</h1>
          
             <form action="{{ route('masala.store') }}" method="post">
               @csrf

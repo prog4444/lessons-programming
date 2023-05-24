@@ -1,12 +1,11 @@
-@extends('layouts.main')
-@section('content')
+
 
 
 <div class="container mt-2">
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-right mb-2">
-                    <a class="btn btn-success" href="{{ route('posts.create') }}"> Create Post</a>
+                    <a class="btn btn-success" href="{{ route('posts.create') }}">Сабти маълумоти нав</a>
                 </div>
             </div>
         </div>
@@ -46,4 +45,3 @@
     </div>
       
     
-@endsection

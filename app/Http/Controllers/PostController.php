@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -28,10 +29,18 @@ class PostController extends Controller
         return view('post.index', compact('post'));
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $pro = Post::all();
-        return view('post.show', compact('pro'));
+        $data = [
+            'count_user' => User::latest()->count(),
+            'menu'       => 'admin.menu.v_menu_admin',
+            'content'    => 'admin.content.view_user',
+            'masala' => 'admin.content.book',
+            'title'    => 'Table User'
+        ];
+       
+        return view('admin.layouts.t_template', compact(['pro']), $data);
     }
 
     public function edit(Post $post)
@@ -64,11 +73,7 @@ class PostController extends Controller
     {
         $post->delete();
         return redirect()->route('show.index');
-        
     }
-
-
-
 
     public function index1()
     {

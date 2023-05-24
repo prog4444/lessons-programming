@@ -4,9 +4,9 @@
 <div class="container-fluid p-4">
   <div class="row justify-content-md-center">
       <div class="col-md-12">
-          <h1 class="text-danger">Masala Add</h1>
+          <h1 class="text-danger">Маълумоти нав </h1>
          
-            <form action="{{ route('masala.store') }}" method="post">
+            <form action="{{ route('post.store') }}" method="post">
               @csrf
             <div class="mb-3">
               <label for="title" class="form-label">Title</label>
