@@ -29,6 +29,7 @@ class CommentController extends Controller
         $parent=Comment::with('user')->find($id);
         $comments = Comment::with('user')->where('parent_id',$id)->get();
         return view('comments.comments', compact('comments','parent'));
+        
     }
 
     /**

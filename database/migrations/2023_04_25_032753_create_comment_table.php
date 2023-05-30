@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('parent_id')->nullable();
             $table->integer('zadacha_id')->nullable();
             $table->text('text');
+            $table->string('level')->nullable();
             $table->timestamps();
         });
     }

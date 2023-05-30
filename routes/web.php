@@ -6,6 +6,7 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\TrixController;
 use App\Http\Controllers\ZadachaController;
 use Illuminate\Support\Facades\Auth;
@@ -60,7 +61,10 @@ Route::get('/masala/{post}/edit', [ZadachaController::class, 'edit'])->name('mas
 Route::patch('/masala/{post}', [ZadachaController::class, 'update'])->name('masala.update');
 Route::delete('/masala/{post}', [ZadachaController::class, 'delete'])->name('masala.delete');
 
-
+// teacher view
+Route::get('/teacher', [TeacherController::class, 'index'])->name('teacher.index')->middleware('teacher');
+Route::delete('/teacher/{post}', [TeacherController::class, 'delete'])->name('comment.delete')->middleware('teacher');
+Route::post('/teacher/comments/{id}', [TeacherController::class, 'comments_teacher'])->name('comments.teacher')->middleware('teacher');
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 # create comment
